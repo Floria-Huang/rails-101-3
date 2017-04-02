@@ -22,7 +22,7 @@ def create
 @group.user = current_user
 
   if @group.save
-recirect_to groups_path
+redirect_to groups_path
 else
   render :new
 end
